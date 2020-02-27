@@ -1,0 +1,15 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.4.RELEASE)
+
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.springframework.cglib.core.ReflectUtils$1 (file:/Users/liaohua/weid-sample/dist/lib/spring-core-4.3.9.RELEASE.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of org.springframework.cglib.core.ReflectUtils$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+response:ResponseData(result=CreateWeIdDataResult(weId=did:weid:1:0xd068e4d3076c3df7e83920539db7df182ddc5a5b, userWeIdPublicKey=WeIdPublicKey(publicKey=718505172790640333205850120049025443702791120029320034312780536192070120705332890949267038468145117212710796147297688203157489841796439877282289474483922), userWeIdPrivateKey=WeIdPrivateKey(privateKey=25439552903953268205555162866567494671544857657882317788248147284840585063434)), errorCode=0, errorMessage=success, transactionInfo=TransactionInfo(blockNumber=181, transactionHash=0x0097e894cb0158ae398b91d841945464a912d3c2dbb6c72690bd90ba0eee4064, transactionIndex=0))

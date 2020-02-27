@@ -86,7 +86,7 @@ public class DemoController {
          *  private keys are not allowed to be transmitted over http, so this place
          *  annotates the return of private keys to avoid misuse.
          */
-        response.getResult().setUserWeIdPrivateKey(null);
+        // response.getResult().setUserWeIdPrivateKey(null);
         return response;
     }
 

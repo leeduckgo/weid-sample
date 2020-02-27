@@ -1,0 +1,1038 @@
+2020-02-27 14:16:12.529 [nioEventLoopGroup-2-2] ERROR ChannelHandler() - network error 
+java.io.IOException: Connection reset by peer
+	at sun.nio.ch.FileDispatcherImpl.read0(Native Method) ~[?:?]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39) ~[?:?]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:233) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:223) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358) ~[?:?]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-all-4.1.15.Final.jar:4.1.15.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1106) ~[netty-all-4.1.15.Final.jar:4.1.15.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:373) ~[netty-all-4.1.15.Final.jar:4.1.15.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123) [netty-all-4.1.15.Final.jar:4.1.15.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645) [netty-all-4.1.15.Final.jar:4.1.15.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:580) [netty-all-4.1.15.Final.jar:4.1.15.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:497) [netty-all-4.1.15.Final.jar:4.1.15.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459) [netty-all-4.1.15.Final.jar:4.1.15.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) [netty-all-4.1.15.Final.jar:4.1.15.Final]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138) [netty-all-4.1.15.Final.jar:4.1.15.Final]
+	at java.lang.Thread.run(Thread.java:835) [?:?]
+2020-02-27 14:16:48.832 [main] INFO  SampleApp() - Starting SampleApp on liaohua-macbook-pro.local with PID 23878 (/Users/liaohua/weid-sample/dist/app/weid-sample.jar started by liaohua in /Users/liaohua/weid-sample)
+2020-02-27 14:16:48.843 [main] INFO  SampleApp() - No active profile set, falling back to default profiles: default
+2020-02-27 14:16:48.919 [main] INFO  AnnotationConfigEmbeddedWebApplicationContext() - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@9ebe38b: startup date [Thu Feb 27 14:16:48 CST 2020]; root of context hierarchy
+2020-02-27 14:16:49.367 [background-preinit] INFO  Version() - HV000001: Hibernate Validator 5.3.5.Final
+2020-02-27 14:16:50.690 [main] INFO  TomcatEmbeddedServletContainer() - Tomcat initialized with port(s): 6100 (https) 6101 (http)
+2020-02-27 14:16:50.733 [main] INFO  StandardService() - Starting service [Tomcat]
+2020-02-27 14:16:50.736 [main] INFO  StandardEngine() - Starting Servlet Engine: Apache Tomcat/8.5.15
+2020-02-27 14:16:50.919 [localhost-startStop-1] INFO  [/]() - Initializing Spring embedded WebApplicationContext
+2020-02-27 14:16:50.920 [localhost-startStop-1] INFO  ContextLoader() - Root WebApplicationContext: initialization completed in 2012 ms
+2020-02-27 14:16:51.130 [localhost-startStop-1] INFO  ServletRegistrationBean() - Mapping servlet: 'dispatcherServlet' to [/]
+2020-02-27 14:16:51.157 [localhost-startStop-1] INFO  FilterRegistrationBean() - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-02-27 14:16:51.158 [localhost-startStop-1] INFO  FilterRegistrationBean() - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-02-27 14:16:51.158 [localhost-startStop-1] INFO  FilterRegistrationBean() - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-02-27 14:16:51.159 [localhost-startStop-1] INFO  FilterRegistrationBean() - Mapping filter: 'requestContextFilter' to: [/*]
+2020-02-27 14:16:51.207 [main] INFO  PropertiesUtils() - loadProps finish...
+2020-02-27 14:16:51.235 [main] INFO  WeServerV2() - [WeServiceImplV2] begin to init web3j instance..
+2020-02-27 14:16:51.312 [main] INFO  ThreadPoolTaskExecutor() - Initializing ExecutorService  'web3sdk'
+2020-02-27 14:16:52.484 [main] INFO  WeServerV2() - [WeServiceImplV2] init web3j instance success..
+2020-02-27 14:16:52.523 [main] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:16:52.530 [main] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:16:52.532 [main] INFO  BaseEngine() - AuthorityIssuerController init succ
+2020-02-27 14:16:52.545 [main] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:16:52.549 [main] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:16:52.549 [main] INFO  BaseEngine() - SpecificIssuerController init succ
+2020-02-27 14:16:52.569 [main] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:16:52.572 [main] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:16:52.572 [main] INFO  BaseEngine() - WeIdContract init succ
+2020-02-27 14:16:52.583 [main] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:16:52.592 [main] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:16:52.592 [main] INFO  BaseEngine() - CptController init succ
+2020-02-27 14:16:52.975 [main] INFO  RequestMappingHandlerAdapter() - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@9ebe38b: startup date [Thu Feb 27 14:16:48 CST 2020]; root of context hierarchy
+2020-02-27 14:16:53.105 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/createWeId],methods=[POST]}" onto public com.webank.weid.protocol.response.ResponseData<com.webank.weid.protocol.response.CreateWeIdDataResult> com.webank.weid.demo.controller.DemoController.createWeId()
+2020-02-27 14:16:53.107 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/registerAuthorityIssuer],methods=[POST]}" onto public com.webank.weid.protocol.response.ResponseData<java.lang.Boolean> com.webank.weid.demo.controller.DemoController.registerAuthorityIssuer(java.util.Map<java.lang.String, java.lang.String>)
+2020-02-27 14:16:53.108 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/registCpt],methods=[POST]}" onto public com.webank.weid.protocol.response.ResponseData<com.webank.weid.protocol.base.CptBaseInfo> com.webank.weid.demo.controller.DemoController.registCpt(java.lang.String)
+2020-02-27 14:16:53.109 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/createCredential],methods=[POST]}" onto public com.webank.weid.protocol.response.ResponseData<com.webank.weid.protocol.base.CredentialWrapper> com.webank.weid.demo.controller.DemoController.createCredential(java.lang.String)
+2020-02-27 14:16:53.110 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/verifyCredential],methods=[POST]}" onto public com.webank.weid.protocol.response.ResponseData<java.lang.Boolean> com.webank.weid.demo.controller.DemoController.verifyCredential(java.lang.String)
+2020-02-27 14:16:53.114 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-02-27 14:16:53.115 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-02-27 14:16:53.156 [main] INFO  SimpleUrlHandlerMapping() - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-27 14:16:53.157 [main] INFO  SimpleUrlHandlerMapping() - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-27 14:16:53.217 [main] INFO  SimpleUrlHandlerMapping() - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-27 14:16:53.442 [main] INFO  AnnotationMBeanExporter() - Registering beans for JMX exposure on startup
+2020-02-27 14:16:53.468 [main] INFO  Http11NioProtocol() - Initializing ProtocolHandler ["https-jsse-nio-6100"]
+2020-02-27 14:16:53.483 [main] INFO  Http11NioProtocol() - Starting ProtocolHandler ["https-jsse-nio-6100"]
+2020-02-27 14:16:53.488 [main] ERROR Http11NioProtocol() - Failed to start end point associated with ProtocolHandler ["https-jsse-nio-6100"]
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:?]
+	at sun.nio.ch.Net.bind(Net.java:455) ~[?:?]
+	at sun.nio.ch.Net.bind(Net.java:447) ~[?:?]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:219) ~[?:?]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80) ~[?:?]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:978) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:628) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) [spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at com.webank.weid.demo.server.SampleApp.main(SampleApp.java:41) [weid-sample.jar:?]
+2020-02-27 14:16:53.496 [main] ERROR StandardService() - Failed to start connector [Connector[HTTP/1.1-6100]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-6100]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) [spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at com.webank.weid.demo.server.SampleApp.main(SampleApp.java:41) [weid-sample.jar:?]
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1029) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	... 13 more
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:?]
+	at sun.nio.ch.Net.bind(Net.java:455) ~[?:?]
+	at sun.nio.ch.Net.bind(Net.java:447) ~[?:?]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:219) ~[?:?]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80) ~[?:?]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:978) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:628) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	... 13 more
+2020-02-27 14:16:53.503 [main] INFO  Http11NioProtocol() - Initializing ProtocolHandler ["http-nio-6101"]
+2020-02-27 14:16:53.508 [main] ERROR Http11NioProtocol() - Failed to initialize end point associated with ProtocolHandler ["http-nio-6101"]
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:?]
+	at sun.nio.ch.Net.bind(Net.java:455) ~[?:?]
+	at sun.nio.ch.Net.bind(Net.java:447) ~[?:?]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:219) ~[?:?]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80) ~[?:?]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:970) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.init(AbstractJsseEndpoint.java:244) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:613) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:66) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:997) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:140) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) [spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at com.webank.weid.demo.server.SampleApp.main(SampleApp.java:41) [weid-sample.jar:?]
+2020-02-27 14:16:53.510 [main] ERROR StandardService() - Failed to start connector [Connector[HTTP/1.1-6101]]
+org.apache.catalina.LifecycleException: Failed to initialize component [Connector[HTTP/1.1-6101]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:112) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:140) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) [spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at com.webank.weid.demo.server.SampleApp.main(SampleApp.java:41) [weid-sample.jar:?]
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:999) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	... 14 more
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:?]
+	at sun.nio.ch.Net.bind(Net.java:455) ~[?:?]
+	at sun.nio.ch.Net.bind(Net.java:447) ~[?:?]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:219) ~[?:?]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80) ~[?:?]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:970) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.init(AbstractJsseEndpoint.java:244) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:613) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:66) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:997) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	... 14 more
+2020-02-27 14:16:53.525 [main] INFO  Http11NioProtocol() - Pausing ProtocolHandler ["https-jsse-nio-6100"]
+2020-02-27 14:16:53.527 [main] INFO  Http11NioProtocol() - Pausing ProtocolHandler ["http-nio-6101"]
+2020-02-27 14:16:53.528 [main] INFO  StandardService() - Stopping service [Tomcat]
+2020-02-27 14:16:53.572 [main] INFO  LifecycleBase() - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2020-02-27 14:16:53.573 [main] INFO  Http11NioProtocol() - Stopping ProtocolHandler ["https-jsse-nio-6100"]
+2020-02-27 14:16:53.574 [main] INFO  Http11NioProtocol() - Destroying ProtocolHandler ["https-jsse-nio-6100"]
+2020-02-27 14:16:53.574 [main] INFO  Http11NioProtocol() - Stopping ProtocolHandler ["http-nio-6101"]
+2020-02-27 14:16:53.575 [main] INFO  Http11NioProtocol() - Destroying ProtocolHandler ["http-nio-6101"]
+2020-02-27 14:16:53.582 [main] INFO  AutoConfigurationReportLoggingInitializer() - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2020-02-27 14:16:53.591 [main] ERROR LoggingFailureAnalysisReporter() - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 6100 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 6100, or configure this application to listen on another port.
+
+2020-02-27 14:16:53.594 [main] INFO  AnnotationConfigEmbeddedWebApplicationContext() - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@9ebe38b: startup date [Thu Feb 27 14:16:48 CST 2020]; root of context hierarchy
+2020-02-27 14:16:53.596 [main] INFO  AnnotationMBeanExporter() - Unregistering JMX-exposed beans on shutdown
+2020-02-27 14:17:05.595 [http-nio-6101-exec-1] INFO  [/]() - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-02-27 14:17:05.595 [http-nio-6101-exec-1] INFO  DispatcherServlet() - FrameworkServlet 'dispatcherServlet': initialization started
+2020-02-27 14:17:05.978 [http-nio-6101-exec-1] INFO  DispatcherServlet() - FrameworkServlet 'dispatcherServlet': initialization completed in 383 ms
+2020-02-27 14:17:06.303 [http-nio-6101-exec-1] INFO  DemoServiceImpl() - begin create weId and set attribute
+2020-02-27 14:17:06.571 [http-nio-6101-exec-1] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:17:06.574 [http-nio-6101-exec-1] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:17:06.574 [http-nio-6101-exec-1] INFO  BaseEngine() - WeIdContract init succ
+2020-02-27 14:17:06.798 [http-nio-6101-exec-1] INFO  Async() -  default set setExeutor , pool size is 50
+2020-02-27 14:17:06.799 [http-nio-6101-exec-1] INFO  Async() -  set setExeutor because executor null, executor is java.util.concurrent.ThreadPoolExecutor@2757ab2f[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+2020-02-27 14:17:07.364 [web3sdk-13] INFO  Service() - Receive block notify: 1,163
+2020-02-27 14:17:07.373 [web3sdk-17] INFO  Service() - Receive block notify: 1,163
+2020-02-27 14:17:07.495 [http-nio-6101-exec-1] INFO  DemoServiceImpl() - weIdService is result,errorCode:0,errorMessage:success
+2020-02-27 14:17:07.513 [http-nio-6101-exec-1] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:17:07.522 [http-nio-6101-exec-1] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:17:07.522 [http-nio-6101-exec-1] INFO  BaseEngine() - WeIdContract init succ
+2020-02-27 14:17:07.875 [web3sdk-19] INFO  Service() - Receive block notify: 1,164
+2020-02-27 14:17:07.877 [web3sdk-18] INFO  Service() - Receive block notify: 1,164
+2020-02-27 14:17:07.884 [http-nio-6101-exec-1] INFO  DemoServiceImpl() - setPublicKey is result,errorCode:0,errorMessage:success
+2020-02-27 14:17:07.900 [http-nio-6101-exec-1] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:17:07.904 [http-nio-6101-exec-1] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:17:07.904 [http-nio-6101-exec-1] INFO  BaseEngine() - WeIdContract init succ
+2020-02-27 14:17:08.384 [web3sdk-20] INFO  Service() - Receive block notify: 1,165
+2020-02-27 14:17:08.385 [web3sdk-23] INFO  Service() - Receive block notify: 1,165
+2020-02-27 14:17:08.388 [http-nio-6101-exec-1] INFO  DemoServiceImpl() - setAuthentication is result,errorCode:0,errorMessage:success
+2020-02-27 14:17:08.394 [http-nio-6101-exec-1] INFO  PrivateKeyUtil() - save private key into file, weId=did:weid:1:0xe6fd013e91070c426d721b3866973693c37cdcb1, filePath=./keys/0xe6fd013e91070c426d721b3866973693c37cdcb1
+2020-02-27 14:17:08.394 [http-nio-6101-exec-1] INFO  FileUtil() - save data in to [./keys/0xe6fd013e91070c426d721b3866973693c37cdcb1]
+2020-02-27 14:32:53.331 [main] INFO  SampleApp() - Starting SampleApp on liaohua-macbook-pro.local with PID 24188 (/Users/liaohua/weid-sample/dist/app/weid-sample.jar started by liaohua in /Users/liaohua/weid-sample)
+2020-02-27 14:32:53.338 [main] INFO  SampleApp() - No active profile set, falling back to default profiles: default
+2020-02-27 14:32:53.434 [main] INFO  AnnotationConfigEmbeddedWebApplicationContext() - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@9ebe38b: startup date [Thu Feb 27 14:32:53 CST 2020]; root of context hierarchy
+2020-02-27 14:32:53.851 [background-preinit] INFO  Version() - HV000001: Hibernate Validator 5.3.5.Final
+2020-02-27 14:32:55.103 [main] INFO  TomcatEmbeddedServletContainer() - Tomcat initialized with port(s): 6100 (https) 6101 (http)
+2020-02-27 14:32:55.124 [main] INFO  StandardService() - Starting service [Tomcat]
+2020-02-27 14:32:55.125 [main] INFO  StandardEngine() - Starting Servlet Engine: Apache Tomcat/8.5.15
+2020-02-27 14:32:55.262 [localhost-startStop-1] INFO  [/]() - Initializing Spring embedded WebApplicationContext
+2020-02-27 14:32:55.263 [localhost-startStop-1] INFO  ContextLoader() - Root WebApplicationContext: initialization completed in 1843 ms
+2020-02-27 14:32:55.501 [localhost-startStop-1] INFO  ServletRegistrationBean() - Mapping servlet: 'dispatcherServlet' to [/]
+2020-02-27 14:32:55.507 [localhost-startStop-1] INFO  FilterRegistrationBean() - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-02-27 14:32:55.507 [localhost-startStop-1] INFO  FilterRegistrationBean() - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-02-27 14:32:55.507 [localhost-startStop-1] INFO  FilterRegistrationBean() - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-02-27 14:32:55.507 [localhost-startStop-1] INFO  FilterRegistrationBean() - Mapping filter: 'requestContextFilter' to: [/*]
+2020-02-27 14:32:55.548 [main] INFO  PropertiesUtils() - loadProps finish...
+2020-02-27 14:32:55.570 [main] INFO  WeServerV2() - [WeServiceImplV2] begin to init web3j instance..
+2020-02-27 14:32:55.637 [main] INFO  ThreadPoolTaskExecutor() - Initializing ExecutorService  'web3sdk'
+2020-02-27 14:32:56.651 [main] INFO  WeServerV2() - [WeServiceImplV2] init web3j instance success..
+2020-02-27 14:32:56.689 [main] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:32:56.698 [main] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:32:56.702 [main] INFO  BaseEngine() - AuthorityIssuerController init succ
+2020-02-27 14:32:56.711 [main] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:32:56.715 [main] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:32:56.715 [main] INFO  BaseEngine() - SpecificIssuerController init succ
+2020-02-27 14:32:56.728 [main] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:32:56.731 [main] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:32:56.731 [main] INFO  BaseEngine() - WeIdContract init succ
+2020-02-27 14:32:56.741 [main] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:32:56.744 [main] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:32:56.744 [main] INFO  BaseEngine() - CptController init succ
+2020-02-27 14:32:57.006 [main] INFO  RequestMappingHandlerAdapter() - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@9ebe38b: startup date [Thu Feb 27 14:32:53 CST 2020]; root of context hierarchy
+2020-02-27 14:32:57.092 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/createWeId],methods=[POST]}" onto public com.webank.weid.protocol.response.ResponseData<com.webank.weid.protocol.response.CreateWeIdDataResult> com.webank.weid.demo.controller.DemoController.createWeId()
+2020-02-27 14:32:57.094 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/registerAuthorityIssuer],methods=[POST]}" onto public com.webank.weid.protocol.response.ResponseData<java.lang.Boolean> com.webank.weid.demo.controller.DemoController.registerAuthorityIssuer(java.util.Map<java.lang.String, java.lang.String>)
+2020-02-27 14:32:57.095 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/registCpt],methods=[POST]}" onto public com.webank.weid.protocol.response.ResponseData<com.webank.weid.protocol.base.CptBaseInfo> com.webank.weid.demo.controller.DemoController.registCpt(java.lang.String)
+2020-02-27 14:32:57.095 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/createCredential],methods=[POST]}" onto public com.webank.weid.protocol.response.ResponseData<com.webank.weid.protocol.base.CredentialWrapper> com.webank.weid.demo.controller.DemoController.createCredential(java.lang.String)
+2020-02-27 14:32:57.096 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/verifyCredential],methods=[POST]}" onto public com.webank.weid.protocol.response.ResponseData<java.lang.Boolean> com.webank.weid.demo.controller.DemoController.verifyCredential(java.lang.String)
+2020-02-27 14:32:57.099 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-02-27 14:32:57.101 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-02-27 14:32:57.146 [main] INFO  SimpleUrlHandlerMapping() - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-27 14:32:57.146 [main] INFO  SimpleUrlHandlerMapping() - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-27 14:32:57.193 [main] INFO  SimpleUrlHandlerMapping() - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-27 14:32:57.545 [main] INFO  AnnotationMBeanExporter() - Registering beans for JMX exposure on startup
+2020-02-27 14:32:57.560 [main] INFO  Http11NioProtocol() - Initializing ProtocolHandler ["https-jsse-nio-6100"]
+2020-02-27 14:32:57.580 [main] INFO  Http11NioProtocol() - Starting ProtocolHandler ["https-jsse-nio-6100"]
+2020-02-27 14:32:57.584 [main] ERROR Http11NioProtocol() - Failed to start end point associated with ProtocolHandler ["https-jsse-nio-6100"]
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:?]
+	at sun.nio.ch.Net.bind(Net.java:455) ~[?:?]
+	at sun.nio.ch.Net.bind(Net.java:447) ~[?:?]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:219) ~[?:?]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80) ~[?:?]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:978) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:628) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) [spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at com.webank.weid.demo.server.SampleApp.main(SampleApp.java:41) [weid-sample.jar:?]
+2020-02-27 14:32:57.589 [main] ERROR StandardService() - Failed to start connector [Connector[HTTP/1.1-6100]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-6100]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) [spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at com.webank.weid.demo.server.SampleApp.main(SampleApp.java:41) [weid-sample.jar:?]
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1029) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	... 13 more
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:?]
+	at sun.nio.ch.Net.bind(Net.java:455) ~[?:?]
+	at sun.nio.ch.Net.bind(Net.java:447) ~[?:?]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:219) ~[?:?]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80) ~[?:?]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:978) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:628) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	... 13 more
+2020-02-27 14:32:57.591 [main] INFO  Http11NioProtocol() - Initializing ProtocolHandler ["http-nio-6101"]
+2020-02-27 14:32:57.592 [main] ERROR Http11NioProtocol() - Failed to initialize end point associated with ProtocolHandler ["http-nio-6101"]
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:?]
+	at sun.nio.ch.Net.bind(Net.java:455) ~[?:?]
+	at sun.nio.ch.Net.bind(Net.java:447) ~[?:?]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:219) ~[?:?]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80) ~[?:?]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:970) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.init(AbstractJsseEndpoint.java:244) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:613) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:66) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:997) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:140) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) [spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at com.webank.weid.demo.server.SampleApp.main(SampleApp.java:41) [weid-sample.jar:?]
+2020-02-27 14:32:57.594 [main] ERROR StandardService() - Failed to start connector [Connector[HTTP/1.1-6101]]
+org.apache.catalina.LifecycleException: Failed to initialize component [Connector[HTTP/1.1-6101]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:112) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:140) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) [spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at com.webank.weid.demo.server.SampleApp.main(SampleApp.java:41) [weid-sample.jar:?]
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:999) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	... 14 more
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:?]
+	at sun.nio.ch.Net.bind(Net.java:455) ~[?:?]
+	at sun.nio.ch.Net.bind(Net.java:447) ~[?:?]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:219) ~[?:?]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80) ~[?:?]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:970) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.init(AbstractJsseEndpoint.java:244) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:613) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:66) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:997) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	... 14 more
+2020-02-27 14:32:57.603 [main] INFO  Http11NioProtocol() - Pausing ProtocolHandler ["https-jsse-nio-6100"]
+2020-02-27 14:32:57.603 [main] INFO  Http11NioProtocol() - Pausing ProtocolHandler ["http-nio-6101"]
+2020-02-27 14:32:57.604 [main] INFO  StandardService() - Stopping service [Tomcat]
+2020-02-27 14:32:57.640 [main] INFO  LifecycleBase() - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2020-02-27 14:32:57.640 [main] INFO  Http11NioProtocol() - Stopping ProtocolHandler ["https-jsse-nio-6100"]
+2020-02-27 14:32:57.641 [main] INFO  Http11NioProtocol() - Destroying ProtocolHandler ["https-jsse-nio-6100"]
+2020-02-27 14:32:57.641 [main] INFO  Http11NioProtocol() - Stopping ProtocolHandler ["http-nio-6101"]
+2020-02-27 14:32:57.641 [main] INFO  Http11NioProtocol() - Destroying ProtocolHandler ["http-nio-6101"]
+2020-02-27 14:32:57.646 [main] INFO  AutoConfigurationReportLoggingInitializer() - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2020-02-27 14:32:57.650 [main] ERROR LoggingFailureAnalysisReporter() - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 6100 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 6100, or configure this application to listen on another port.
+
+2020-02-27 14:32:57.652 [main] INFO  AnnotationConfigEmbeddedWebApplicationContext() - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@9ebe38b: startup date [Thu Feb 27 14:32:53 CST 2020]; root of context hierarchy
+2020-02-27 14:32:57.654 [main] INFO  AnnotationMBeanExporter() - Unregistering JMX-exposed beans on shutdown
+2020-02-27 14:32:59.162 [http-nio-6101-exec-3] INFO  DemoServiceImpl() - begin create weId and set attribute
+2020-02-27 14:32:59.210 [http-nio-6101-exec-3] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:32:59.218 [http-nio-6101-exec-3] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:32:59.218 [http-nio-6101-exec-3] INFO  BaseEngine() - WeIdContract init succ
+2020-02-27 14:32:59.314 [web3sdk-70] INFO  Service() - Receive block notify: 1,166
+2020-02-27 14:32:59.317 [web3sdk-11] INFO  Service() - Receive block notify: 1,166
+2020-02-27 14:32:59.316 [web3sdk-63] INFO  Service() - Receive block notify: 1,166
+2020-02-27 14:32:59.327 [http-nio-6101-exec-3] INFO  DemoServiceImpl() - weIdService is result,errorCode:0,errorMessage:success
+2020-02-27 14:32:59.330 [http-nio-6101-exec-3] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:32:59.331 [http-nio-6101-exec-3] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:32:59.331 [http-nio-6101-exec-3] INFO  BaseEngine() - WeIdContract init succ
+2020-02-27 14:32:59.828 [web3sdk-75] INFO  Service() - Receive block notify: 1,167
+2020-02-27 14:32:59.829 [web3sdk-64] INFO  Service() - Receive block notify: 1,167
+2020-02-27 14:32:59.830 [web3sdk-12] INFO  Service() - Receive block notify: 1,167
+2020-02-27 14:32:59.834 [http-nio-6101-exec-3] INFO  DemoServiceImpl() - setPublicKey is result,errorCode:0,errorMessage:success
+2020-02-27 14:32:59.838 [http-nio-6101-exec-3] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:32:59.840 [http-nio-6101-exec-3] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:32:59.840 [http-nio-6101-exec-3] INFO  BaseEngine() - WeIdContract init succ
+2020-02-27 14:33:00.339 [web3sdk-80] INFO  Service() - Receive block notify: 1,168
+2020-02-27 14:33:00.339 [web3sdk-65] INFO  Service() - Receive block notify: 1,168
+2020-02-27 14:33:00.341 [web3sdk-14] INFO  Service() - Receive block notify: 1,168
+2020-02-27 14:33:00.343 [http-nio-6101-exec-3] INFO  DemoServiceImpl() - setAuthentication is result,errorCode:0,errorMessage:success
+2020-02-27 14:33:00.344 [http-nio-6101-exec-3] INFO  PrivateKeyUtil() - save private key into file, weId=did:weid:1:0xfb26c44cafc30e73b2135f5a56bbbc37a2721f13, filePath=./keys/0xfb26c44cafc30e73b2135f5a56bbbc37a2721f13
+2020-02-27 14:33:00.344 [http-nio-6101-exec-3] INFO  FileUtil() - save data in to [./keys/0xfb26c44cafc30e73b2135f5a56bbbc37a2721f13]
+2020-02-27 14:35:09.248 [main] INFO  SampleApp() - Starting SampleApp on liaohua-macbook-pro.local with PID 24393 (/Users/liaohua/weid-sample/dist/app/weid-sample.jar started by liaohua in /Users/liaohua/weid-sample)
+2020-02-27 14:35:09.258 [main] INFO  SampleApp() - No active profile set, falling back to default profiles: default
+2020-02-27 14:35:09.344 [main] INFO  AnnotationConfigEmbeddedWebApplicationContext() - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@9ebe38b: startup date [Thu Feb 27 14:35:09 CST 2020]; root of context hierarchy
+2020-02-27 14:35:09.851 [background-preinit] INFO  Version() - HV000001: Hibernate Validator 5.3.5.Final
+2020-02-27 14:35:11.359 [main] INFO  TomcatEmbeddedServletContainer() - Tomcat initialized with port(s): 6100 (https) 6101 (http)
+2020-02-27 14:35:11.384 [main] INFO  StandardService() - Starting service [Tomcat]
+2020-02-27 14:35:11.386 [main] INFO  StandardEngine() - Starting Servlet Engine: Apache Tomcat/8.5.15
+2020-02-27 14:35:11.515 [localhost-startStop-1] INFO  [/]() - Initializing Spring embedded WebApplicationContext
+2020-02-27 14:35:11.516 [localhost-startStop-1] INFO  ContextLoader() - Root WebApplicationContext: initialization completed in 2186 ms
+2020-02-27 14:35:11.653 [localhost-startStop-1] INFO  ServletRegistrationBean() - Mapping servlet: 'dispatcherServlet' to [/]
+2020-02-27 14:35:11.658 [localhost-startStop-1] INFO  FilterRegistrationBean() - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-02-27 14:35:11.658 [localhost-startStop-1] INFO  FilterRegistrationBean() - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-02-27 14:35:11.658 [localhost-startStop-1] INFO  FilterRegistrationBean() - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-02-27 14:35:11.659 [localhost-startStop-1] INFO  FilterRegistrationBean() - Mapping filter: 'requestContextFilter' to: [/*]
+2020-02-27 14:35:11.699 [main] INFO  PropertiesUtils() - loadProps finish...
+2020-02-27 14:35:11.721 [main] INFO  WeServerV2() - [WeServiceImplV2] begin to init web3j instance..
+2020-02-27 14:35:11.799 [main] INFO  ThreadPoolTaskExecutor() - Initializing ExecutorService  'web3sdk'
+2020-02-27 14:35:12.893 [http-nio-6101-exec-5] INFO  DemoServiceImpl() - begin create weId and set attribute
+2020-02-27 14:35:12.902 [http-nio-6101-exec-5] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:35:12.904 [http-nio-6101-exec-5] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:35:12.905 [http-nio-6101-exec-5] INFO  BaseEngine() - WeIdContract init succ
+2020-02-27 14:35:12.924 [main] INFO  WeServerV2() - [WeServiceImplV2] init web3j instance success..
+2020-02-27 14:35:12.948 [web3sdk-52] INFO  Service() - Receive block notify: 1,169
+2020-02-27 14:35:12.949 [web3sdk-32] INFO  Service() - Receive block notify: 1,169
+2020-02-27 14:35:12.951 [web3sdk-81] INFO  Service() - Receive block notify: 1,169
+2020-02-27 14:35:12.954 [http-nio-6101-exec-5] INFO  DemoServiceImpl() - weIdService is result,errorCode:0,errorMessage:success
+2020-02-27 14:35:12.957 [http-nio-6101-exec-5] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:35:12.959 [http-nio-6101-exec-5] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:35:12.959 [http-nio-6101-exec-5] INFO  BaseEngine() - WeIdContract init succ
+2020-02-27 14:35:12.961 [web3sdk-2] INFO  Service() - Receive block notify: 1,169
+2020-02-27 14:35:13.003 [main] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:35:13.010 [main] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:35:13.011 [main] INFO  BaseEngine() - AuthorityIssuerController init succ
+2020-02-27 14:35:13.022 [main] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:35:13.025 [main] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:35:13.026 [main] INFO  BaseEngine() - SpecificIssuerController init succ
+2020-02-27 14:35:13.043 [main] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:35:13.046 [main] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:35:13.047 [main] INFO  BaseEngine() - WeIdContract init succ
+2020-02-27 14:35:13.056 [main] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:35:13.059 [main] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:35:13.059 [main] INFO  BaseEngine() - CptController init succ
+2020-02-27 14:35:13.413 [main] INFO  RequestMappingHandlerAdapter() - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@9ebe38b: startup date [Thu Feb 27 14:35:09 CST 2020]; root of context hierarchy
+2020-02-27 14:35:13.461 [web3sdk-57] INFO  Service() - Receive block notify: 1,170
+2020-02-27 14:35:13.461 [web3sdk-34] INFO  Service() - Receive block notify: 1,170
+2020-02-27 14:35:13.462 [web3sdk-82] INFO  Service() - Receive block notify: 1,170
+2020-02-27 14:35:13.468 [http-nio-6101-exec-5] INFO  DemoServiceImpl() - setPublicKey is result,errorCode:0,errorMessage:success
+2020-02-27 14:35:13.470 [web3sdk-11] INFO  Service() - Receive block notify: 1,170
+2020-02-27 14:35:13.473 [http-nio-6101-exec-5] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:35:13.475 [http-nio-6101-exec-5] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:35:13.476 [http-nio-6101-exec-5] INFO  BaseEngine() - WeIdContract init succ
+2020-02-27 14:35:13.556 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/createWeId],methods=[POST]}" onto public com.webank.weid.protocol.response.ResponseData<com.webank.weid.protocol.response.CreateWeIdDataResult> com.webank.weid.demo.controller.DemoController.createWeId()
+2020-02-27 14:35:13.558 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/registerAuthorityIssuer],methods=[POST]}" onto public com.webank.weid.protocol.response.ResponseData<java.lang.Boolean> com.webank.weid.demo.controller.DemoController.registerAuthorityIssuer(java.util.Map<java.lang.String, java.lang.String>)
+2020-02-27 14:35:13.559 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/registCpt],methods=[POST]}" onto public com.webank.weid.protocol.response.ResponseData<com.webank.weid.protocol.base.CptBaseInfo> com.webank.weid.demo.controller.DemoController.registCpt(java.lang.String)
+2020-02-27 14:35:13.560 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/createCredential],methods=[POST]}" onto public com.webank.weid.protocol.response.ResponseData<com.webank.weid.protocol.base.CredentialWrapper> com.webank.weid.demo.controller.DemoController.createCredential(java.lang.String)
+2020-02-27 14:35:13.561 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/verifyCredential],methods=[POST]}" onto public com.webank.weid.protocol.response.ResponseData<java.lang.Boolean> com.webank.weid.demo.controller.DemoController.verifyCredential(java.lang.String)
+2020-02-27 14:35:13.565 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-02-27 14:35:13.566 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-02-27 14:35:13.606 [main] INFO  SimpleUrlHandlerMapping() - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-27 14:35:13.607 [main] INFO  SimpleUrlHandlerMapping() - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-27 14:35:13.649 [main] INFO  SimpleUrlHandlerMapping() - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-27 14:35:13.845 [main] INFO  AnnotationMBeanExporter() - Registering beans for JMX exposure on startup
+2020-02-27 14:35:13.863 [main] INFO  Http11NioProtocol() - Initializing ProtocolHandler ["https-jsse-nio-6100"]
+2020-02-27 14:35:13.885 [main] INFO  Http11NioProtocol() - Starting ProtocolHandler ["https-jsse-nio-6100"]
+2020-02-27 14:35:13.890 [main] ERROR Http11NioProtocol() - Failed to start end point associated with ProtocolHandler ["https-jsse-nio-6100"]
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:?]
+	at sun.nio.ch.Net.bind(Net.java:455) ~[?:?]
+	at sun.nio.ch.Net.bind(Net.java:447) ~[?:?]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:219) ~[?:?]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80) ~[?:?]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:978) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:628) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) [spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at com.webank.weid.demo.server.SampleApp.main(SampleApp.java:41) [weid-sample.jar:?]
+2020-02-27 14:35:13.901 [main] ERROR StandardService() - Failed to start connector [Connector[HTTP/1.1-6100]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-6100]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) [spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at com.webank.weid.demo.server.SampleApp.main(SampleApp.java:41) [weid-sample.jar:?]
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1029) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	... 13 more
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:?]
+	at sun.nio.ch.Net.bind(Net.java:455) ~[?:?]
+	at sun.nio.ch.Net.bind(Net.java:447) ~[?:?]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:219) ~[?:?]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80) ~[?:?]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:978) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:628) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	... 13 more
+2020-02-27 14:35:13.902 [main] INFO  Http11NioProtocol() - Initializing ProtocolHandler ["http-nio-6101"]
+2020-02-27 14:35:13.903 [main] ERROR Http11NioProtocol() - Failed to initialize end point associated with ProtocolHandler ["http-nio-6101"]
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:?]
+	at sun.nio.ch.Net.bind(Net.java:455) ~[?:?]
+	at sun.nio.ch.Net.bind(Net.java:447) ~[?:?]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:219) ~[?:?]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80) ~[?:?]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:970) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.init(AbstractJsseEndpoint.java:244) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:613) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:66) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:997) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:140) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) [spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at com.webank.weid.demo.server.SampleApp.main(SampleApp.java:41) [weid-sample.jar:?]
+2020-02-27 14:35:13.905 [main] ERROR StandardService() - Failed to start connector [Connector[HTTP/1.1-6101]]
+org.apache.catalina.LifecycleException: Failed to initialize component [Connector[HTTP/1.1-6101]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:112) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:140) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) [spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at com.webank.weid.demo.server.SampleApp.main(SampleApp.java:41) [weid-sample.jar:?]
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:999) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	... 14 more
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:?]
+	at sun.nio.ch.Net.bind(Net.java:455) ~[?:?]
+	at sun.nio.ch.Net.bind(Net.java:447) ~[?:?]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:219) ~[?:?]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80) ~[?:?]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:970) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.init(AbstractJsseEndpoint.java:244) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:613) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:66) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:997) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	... 14 more
+2020-02-27 14:35:13.917 [main] INFO  Http11NioProtocol() - Pausing ProtocolHandler ["https-jsse-nio-6100"]
+2020-02-27 14:35:13.917 [main] INFO  Http11NioProtocol() - Pausing ProtocolHandler ["http-nio-6101"]
+2020-02-27 14:35:13.918 [main] INFO  StandardService() - Stopping service [Tomcat]
+2020-02-27 14:35:13.954 [main] INFO  LifecycleBase() - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2020-02-27 14:35:13.955 [main] INFO  Http11NioProtocol() - Stopping ProtocolHandler ["https-jsse-nio-6100"]
+2020-02-27 14:35:13.955 [main] INFO  Http11NioProtocol() - Destroying ProtocolHandler ["https-jsse-nio-6100"]
+2020-02-27 14:35:13.956 [main] INFO  Http11NioProtocol() - Stopping ProtocolHandler ["http-nio-6101"]
+2020-02-27 14:35:13.956 [main] INFO  Http11NioProtocol() - Destroying ProtocolHandler ["http-nio-6101"]
+2020-02-27 14:35:13.970 [web3sdk-62] INFO  Service() - Receive block notify: 1,171
+2020-02-27 14:35:13.971 [web3sdk-35] INFO  Service() - Receive block notify: 1,171
+2020-02-27 14:35:13.972 [web3sdk-83] INFO  Service() - Receive block notify: 1,171
+2020-02-27 14:35:13.972 [web3sdk-12] INFO  Service() - Receive block notify: 1,171
+2020-02-27 14:35:13.974 [main] INFO  AutoConfigurationReportLoggingInitializer() - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2020-02-27 14:35:13.975 [http-nio-6101-exec-5] INFO  DemoServiceImpl() - setAuthentication is result,errorCode:0,errorMessage:success
+2020-02-27 14:35:13.975 [http-nio-6101-exec-5] INFO  PrivateKeyUtil() - save private key into file, weId=did:weid:1:0x1765da941ddc969c93a57aa0d9152091d2dc824d, filePath=./keys/0x1765da941ddc969c93a57aa0d9152091d2dc824d
+2020-02-27 14:35:13.975 [http-nio-6101-exec-5] INFO  FileUtil() - save data in to [./keys/0x1765da941ddc969c93a57aa0d9152091d2dc824d]
+2020-02-27 14:35:13.990 [main] ERROR LoggingFailureAnalysisReporter() - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 6100 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 6100, or configure this application to listen on another port.
+
+2020-02-27 14:35:13.992 [main] INFO  AnnotationConfigEmbeddedWebApplicationContext() - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@9ebe38b: startup date [Thu Feb 27 14:35:09 CST 2020]; root of context hierarchy
+2020-02-27 14:35:13.995 [main] INFO  AnnotationMBeanExporter() - Unregistering JMX-exposed beans on shutdown
+2020-02-27 14:35:16.624 [http-nio-6101-exec-6] INFO  DemoServiceImpl() - begin create weId and set attribute
+2020-02-27 14:35:16.636 [http-nio-6101-exec-6] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:35:16.638 [http-nio-6101-exec-6] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:35:16.638 [http-nio-6101-exec-6] INFO  BaseEngine() - WeIdContract init succ
+2020-02-27 14:35:16.661 [web3sdk-68] INFO  Service() - Receive block notify: 1,172
+2020-02-27 14:35:16.662 [web3sdk-37] INFO  Service() - Receive block notify: 1,172
+2020-02-27 14:35:16.664 [web3sdk-15] INFO  Service() - Receive block notify: 1,172
+2020-02-27 14:35:16.664 [web3sdk-86] INFO  Service() - Receive block notify: 1,172
+2020-02-27 14:35:16.669 [http-nio-6101-exec-6] INFO  DemoServiceImpl() - weIdService is result,errorCode:0,errorMessage:success
+2020-02-27 14:35:16.671 [http-nio-6101-exec-6] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:35:16.672 [http-nio-6101-exec-6] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:35:16.673 [http-nio-6101-exec-6] INFO  BaseEngine() - WeIdContract init succ
+2020-02-27 14:35:17.168 [web3sdk-74] INFO  Service() - Receive block notify: 1,173
+2020-02-27 14:35:17.168 [web3sdk-39] INFO  Service() - Receive block notify: 1,173
+2020-02-27 14:35:17.169 [web3sdk-87] INFO  Service() - Receive block notify: 1,173
+2020-02-27 14:35:17.172 [http-nio-6101-exec-6] INFO  DemoServiceImpl() - setPublicKey is result,errorCode:0,errorMessage:success
+2020-02-27 14:35:17.175 [http-nio-6101-exec-6] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:35:17.177 [http-nio-6101-exec-6] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:35:17.177 [http-nio-6101-exec-6] INFO  BaseEngine() - WeIdContract init succ
+2020-02-27 14:35:17.180 [web3sdk-16] INFO  Service() - Receive block notify: 1,173
+2020-02-27 14:35:17.692 [web3sdk-79] INFO  Service() - Receive block notify: 1,174
+2020-02-27 14:35:17.693 [web3sdk-40] INFO  Service() - Receive block notify: 1,174
+2020-02-27 14:35:17.695 [web3sdk-88] INFO  Service() - Receive block notify: 1,174
+2020-02-27 14:35:17.695 [web3sdk-17] INFO  Service() - Receive block notify: 1,174
+2020-02-27 14:35:17.715 [http-nio-6101-exec-6] INFO  DemoServiceImpl() - setAuthentication is result,errorCode:0,errorMessage:success
+2020-02-27 14:35:17.715 [http-nio-6101-exec-6] INFO  PrivateKeyUtil() - save private key into file, weId=did:weid:1:0x4ab994b77d4a3bb13b9a2a00ac9bd54040595c09, filePath=./keys/0x4ab994b77d4a3bb13b9a2a00ac9bd54040595c09
+2020-02-27 14:35:17.715 [http-nio-6101-exec-6] INFO  FileUtil() - save data in to [./keys/0x4ab994b77d4a3bb13b9a2a00ac9bd54040595c09]
+2020-02-27 14:36:51.217 [main] INFO  SampleApp() - Starting SampleApp on liaohua-macbook-pro.local with PID 24587 (/Users/liaohua/weid-sample/dist/app/weid-sample.jar started by liaohua in /Users/liaohua/weid-sample)
+2020-02-27 14:36:51.236 [main] INFO  SampleApp() - No active profile set, falling back to default profiles: default
+2020-02-27 14:36:51.305 [main] INFO  AnnotationConfigEmbeddedWebApplicationContext() - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@9ebe38b: startup date [Thu Feb 27 14:36:51 CST 2020]; root of context hierarchy
+2020-02-27 14:36:51.645 [background-preinit] INFO  Version() - HV000001: Hibernate Validator 5.3.5.Final
+2020-02-27 14:36:53.029 [main] INFO  TomcatEmbeddedServletContainer() - Tomcat initialized with port(s): 6100 (https) 6101 (http)
+2020-02-27 14:36:53.055 [main] INFO  StandardService() - Starting service [Tomcat]
+2020-02-27 14:36:53.057 [main] INFO  StandardEngine() - Starting Servlet Engine: Apache Tomcat/8.5.15
+2020-02-27 14:36:53.193 [localhost-startStop-1] INFO  [/]() - Initializing Spring embedded WebApplicationContext
+2020-02-27 14:36:53.194 [localhost-startStop-1] INFO  ContextLoader() - Root WebApplicationContext: initialization completed in 1899 ms
+2020-02-27 14:36:53.350 [localhost-startStop-1] INFO  ServletRegistrationBean() - Mapping servlet: 'dispatcherServlet' to [/]
+2020-02-27 14:36:53.354 [localhost-startStop-1] INFO  FilterRegistrationBean() - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-02-27 14:36:53.355 [localhost-startStop-1] INFO  FilterRegistrationBean() - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-02-27 14:36:53.355 [localhost-startStop-1] INFO  FilterRegistrationBean() - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-02-27 14:36:53.355 [localhost-startStop-1] INFO  FilterRegistrationBean() - Mapping filter: 'requestContextFilter' to: [/*]
+2020-02-27 14:36:53.396 [main] INFO  PropertiesUtils() - loadProps finish...
+2020-02-27 14:36:53.419 [main] INFO  WeServerV2() - [WeServiceImplV2] begin to init web3j instance..
+2020-02-27 14:36:53.508 [main] INFO  ThreadPoolTaskExecutor() - Initializing ExecutorService  'web3sdk'
+2020-02-27 14:36:54.968 [main] INFO  WeServerV2() - [WeServiceImplV2] init web3j instance success..
+2020-02-27 14:36:55.002 [main] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:36:55.008 [main] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:36:55.009 [main] INFO  BaseEngine() - AuthorityIssuerController init succ
+2020-02-27 14:36:55.017 [main] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:36:55.019 [main] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:36:55.020 [main] INFO  BaseEngine() - SpecificIssuerController init succ
+2020-02-27 14:36:55.036 [main] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:36:55.039 [main] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:36:55.039 [main] INFO  BaseEngine() - WeIdContract init succ
+2020-02-27 14:36:55.048 [main] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:36:55.050 [main] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:36:55.050 [main] INFO  BaseEngine() - CptController init succ
+2020-02-27 14:36:55.319 [main] INFO  RequestMappingHandlerAdapter() - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@9ebe38b: startup date [Thu Feb 27 14:36:51 CST 2020]; root of context hierarchy
+2020-02-27 14:36:55.418 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/createWeId],methods=[POST]}" onto public com.webank.weid.protocol.response.ResponseData<com.webank.weid.protocol.response.CreateWeIdDataResult> com.webank.weid.demo.controller.DemoController.createWeId()
+2020-02-27 14:36:55.420 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/registerAuthorityIssuer],methods=[POST]}" onto public com.webank.weid.protocol.response.ResponseData<java.lang.Boolean> com.webank.weid.demo.controller.DemoController.registerAuthorityIssuer(java.util.Map<java.lang.String, java.lang.String>)
+2020-02-27 14:36:55.421 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/registCpt],methods=[POST]}" onto public com.webank.weid.protocol.response.ResponseData<com.webank.weid.protocol.base.CptBaseInfo> com.webank.weid.demo.controller.DemoController.registCpt(java.lang.String)
+2020-02-27 14:36:55.422 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/createCredential],methods=[POST]}" onto public com.webank.weid.protocol.response.ResponseData<com.webank.weid.protocol.base.CredentialWrapper> com.webank.weid.demo.controller.DemoController.createCredential(java.lang.String)
+2020-02-27 14:36:55.423 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/verifyCredential],methods=[POST]}" onto public com.webank.weid.protocol.response.ResponseData<java.lang.Boolean> com.webank.weid.demo.controller.DemoController.verifyCredential(java.lang.String)
+2020-02-27 14:36:55.426 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-02-27 14:36:55.427 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-02-27 14:36:55.464 [main] INFO  SimpleUrlHandlerMapping() - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-27 14:36:55.465 [main] INFO  SimpleUrlHandlerMapping() - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-27 14:36:55.472 [http-nio-6101-exec-8] INFO  DemoServiceImpl() - begin create weId and set attribute
+2020-02-27 14:36:55.502 [http-nio-6101-exec-8] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:36:55.504 [http-nio-6101-exec-8] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:36:55.504 [http-nio-6101-exec-8] INFO  BaseEngine() - WeIdContract init succ
+2020-02-27 14:36:55.535 [main] INFO  SimpleUrlHandlerMapping() - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-27 14:36:55.712 [web3sdk-33] INFO  Service() - Receive block notify: 1,175
+2020-02-27 14:36:55.714 [web3sdk-38] INFO  Service() - Receive block notify: 1,175
+2020-02-27 14:36:55.716 [web3sdk-90] INFO  Service() - Receive block notify: 1,175
+2020-02-27 14:36:55.723 [web3sdk-10] INFO  Service() - Receive block notify: 1,175
+2020-02-27 14:36:55.722 [web3sdk-67] INFO  Service() - Receive block notify: 1,175
+2020-02-27 14:36:55.732 [http-nio-6101-exec-8] INFO  DemoServiceImpl() - weIdService is result,errorCode:0,errorMessage:success
+2020-02-27 14:36:55.734 [http-nio-6101-exec-8] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:36:55.736 [http-nio-6101-exec-8] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:36:55.736 [http-nio-6101-exec-8] INFO  BaseEngine() - WeIdContract init succ
+2020-02-27 14:36:55.870 [main] INFO  AnnotationMBeanExporter() - Registering beans for JMX exposure on startup
+2020-02-27 14:36:55.887 [main] INFO  Http11NioProtocol() - Initializing ProtocolHandler ["https-jsse-nio-6100"]
+2020-02-27 14:36:55.904 [main] INFO  Http11NioProtocol() - Starting ProtocolHandler ["https-jsse-nio-6100"]
+2020-02-27 14:36:55.909 [main] ERROR Http11NioProtocol() - Failed to start end point associated with ProtocolHandler ["https-jsse-nio-6100"]
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:?]
+	at sun.nio.ch.Net.bind(Net.java:455) ~[?:?]
+	at sun.nio.ch.Net.bind(Net.java:447) ~[?:?]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:219) ~[?:?]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80) ~[?:?]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:978) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:628) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) [spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at com.webank.weid.demo.server.SampleApp.main(SampleApp.java:41) [weid-sample.jar:?]
+2020-02-27 14:36:55.914 [main] ERROR StandardService() - Failed to start connector [Connector[HTTP/1.1-6100]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-6100]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) [spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at com.webank.weid.demo.server.SampleApp.main(SampleApp.java:41) [weid-sample.jar:?]
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1029) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	... 13 more
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:?]
+	at sun.nio.ch.Net.bind(Net.java:455) ~[?:?]
+	at sun.nio.ch.Net.bind(Net.java:447) ~[?:?]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:219) ~[?:?]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80) ~[?:?]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:978) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:628) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	... 13 more
+2020-02-27 14:36:55.916 [main] INFO  Http11NioProtocol() - Initializing ProtocolHandler ["http-nio-6101"]
+2020-02-27 14:36:55.917 [main] ERROR Http11NioProtocol() - Failed to initialize end point associated with ProtocolHandler ["http-nio-6101"]
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:?]
+	at sun.nio.ch.Net.bind(Net.java:455) ~[?:?]
+	at sun.nio.ch.Net.bind(Net.java:447) ~[?:?]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:219) ~[?:?]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80) ~[?:?]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:970) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.init(AbstractJsseEndpoint.java:244) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:613) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:66) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:997) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:140) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) [spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at com.webank.weid.demo.server.SampleApp.main(SampleApp.java:41) [weid-sample.jar:?]
+2020-02-27 14:36:55.918 [main] ERROR StandardService() - Failed to start connector [Connector[HTTP/1.1-6101]]
+org.apache.catalina.LifecycleException: Failed to initialize component [Connector[HTTP/1.1-6101]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:112) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:140) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) [spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at com.webank.weid.demo.server.SampleApp.main(SampleApp.java:41) [weid-sample.jar:?]
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:999) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	... 14 more
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:?]
+	at sun.nio.ch.Net.bind(Net.java:455) ~[?:?]
+	at sun.nio.ch.Net.bind(Net.java:447) ~[?:?]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:219) ~[?:?]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80) ~[?:?]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:970) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.init(AbstractJsseEndpoint.java:244) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:613) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:66) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:997) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	... 14 more
+2020-02-27 14:36:55.932 [main] INFO  Http11NioProtocol() - Pausing ProtocolHandler ["https-jsse-nio-6100"]
+2020-02-27 14:36:55.932 [main] INFO  Http11NioProtocol() - Pausing ProtocolHandler ["http-nio-6101"]
+2020-02-27 14:36:55.932 [main] INFO  StandardService() - Stopping service [Tomcat]
+2020-02-27 14:36:55.982 [main] INFO  LifecycleBase() - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2020-02-27 14:36:55.983 [main] INFO  Http11NioProtocol() - Stopping ProtocolHandler ["https-jsse-nio-6100"]
+2020-02-27 14:36:55.983 [main] INFO  Http11NioProtocol() - Destroying ProtocolHandler ["https-jsse-nio-6100"]
+2020-02-27 14:36:55.984 [main] INFO  Http11NioProtocol() - Stopping ProtocolHandler ["http-nio-6101"]
+2020-02-27 14:36:55.985 [main] INFO  Http11NioProtocol() - Destroying ProtocolHandler ["http-nio-6101"]
+2020-02-27 14:36:55.989 [main] INFO  AutoConfigurationReportLoggingInitializer() - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2020-02-27 14:36:55.992 [main] ERROR LoggingFailureAnalysisReporter() - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 6100 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 6100, or configure this application to listen on another port.
+
+2020-02-27 14:36:55.994 [main] INFO  AnnotationConfigEmbeddedWebApplicationContext() - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@9ebe38b: startup date [Thu Feb 27 14:36:51 CST 2020]; root of context hierarchy
+2020-02-27 14:36:55.995 [main] INFO  AnnotationMBeanExporter() - Unregistering JMX-exposed beans on shutdown
+2020-02-27 14:36:56.223 [web3sdk-38] INFO  Service() - Receive block notify: 1,176
+2020-02-27 14:36:56.223 [web3sdk-91] INFO  Service() - Receive block notify: 1,176
+2020-02-27 14:36:56.224 [web3sdk-39] INFO  Service() - Receive block notify: 1,176
+2020-02-27 14:36:56.227 [web3sdk-68] INFO  Service() - Receive block notify: 1,176
+2020-02-27 14:36:56.227 [web3sdk-12] INFO  Service() - Receive block notify: 1,176
+2020-02-27 14:36:56.230 [http-nio-6101-exec-8] INFO  DemoServiceImpl() - setPublicKey is result,errorCode:0,errorMessage:success
+2020-02-27 14:36:56.238 [http-nio-6101-exec-8] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:36:56.239 [http-nio-6101-exec-8] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:36:56.240 [http-nio-6101-exec-8] INFO  BaseEngine() - WeIdContract init succ
+2020-02-27 14:36:56.734 [web3sdk-43] INFO  Service() - Receive block notify: 1,177
+2020-02-27 14:36:56.734 [web3sdk-41] INFO  Service() - Receive block notify: 1,177
+2020-02-27 14:36:56.734 [web3sdk-92] INFO  Service() - Receive block notify: 1,177
+2020-02-27 14:36:56.736 [web3sdk-70] INFO  Service() - Receive block notify: 1,177
+2020-02-27 14:36:56.736 [http-nio-6101-exec-8] INFO  DemoServiceImpl() - setAuthentication is result,errorCode:0,errorMessage:success
+2020-02-27 14:36:56.737 [http-nio-6101-exec-8] INFO  PrivateKeyUtil() - save private key into file, weId=did:weid:1:0xdf6b00711bddecaf238218c8df582bf199aff0cd, filePath=./keys/0xdf6b00711bddecaf238218c8df582bf199aff0cd
+2020-02-27 14:36:56.737 [http-nio-6101-exec-8] INFO  FileUtil() - save data in to [./keys/0xdf6b00711bddecaf238218c8df582bf199aff0cd]
+2020-02-27 14:36:56.736 [web3sdk-13] INFO  Service() - Receive block notify: 1,177
+2020-02-27 14:37:27.181 [http-nio-6101-exec-9] INFO  DemoServiceImpl() - begin create weId and set attribute
+2020-02-27 14:37:27.188 [http-nio-6101-exec-9] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:37:27.190 [http-nio-6101-exec-9] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:37:27.190 [http-nio-6101-exec-9] INFO  BaseEngine() - WeIdContract init succ
+2020-02-27 14:37:27.391 [web3sdk-64] INFO  Service() - Receive block notify: 1,178
+2020-02-27 14:37:27.392 [web3sdk-57] INFO  Service() - Receive block notify: 1,178
+2020-02-27 14:37:27.393 [web3sdk-86] INFO  Service() - Receive block notify: 1,178
+2020-02-27 14:37:27.392 [web3sdk-9] INFO  Service() - Receive block notify: 1,178
+2020-02-27 14:37:27.394 [web3sdk-29] INFO  Service() - Receive block notify: 1,178
+2020-02-27 14:37:27.411 [http-nio-6101-exec-9] INFO  DemoServiceImpl() - weIdService is result,errorCode:0,errorMessage:success
+2020-02-27 14:37:27.417 [http-nio-6101-exec-9] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:37:27.419 [http-nio-6101-exec-9] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:37:27.419 [http-nio-6101-exec-9] INFO  BaseEngine() - WeIdContract init succ
+2020-02-27 14:37:27.911 [web3sdk-69] INFO  Service() - Receive block notify: 1,179
+2020-02-27 14:37:27.912 [web3sdk-58] INFO  Service() - Receive block notify: 1,179
+2020-02-27 14:37:27.912 [web3sdk-10] INFO  Service() - Receive block notify: 1,179
+2020-02-27 14:37:27.914 [web3sdk-87] INFO  Service() - Receive block notify: 1,179
+2020-02-27 14:37:27.914 [web3sdk-30] INFO  Service() - Receive block notify: 1,179
+2020-02-27 14:37:27.918 [http-nio-6101-exec-9] INFO  DemoServiceImpl() - setPublicKey is result,errorCode:0,errorMessage:success
+2020-02-27 14:37:27.921 [http-nio-6101-exec-9] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:37:27.922 [http-nio-6101-exec-9] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:37:27.922 [http-nio-6101-exec-9] INFO  BaseEngine() - WeIdContract init succ
+2020-02-27 14:37:28.424 [web3sdk-74] INFO  Service() - Receive block notify: 1,180
+2020-02-27 14:37:28.425 [web3sdk-59] INFO  Service() - Receive block notify: 1,180
+2020-02-27 14:37:28.424 [web3sdk-11] INFO  Service() - Receive block notify: 1,180
+2020-02-27 14:37:28.426 [web3sdk-88] INFO  Service() - Receive block notify: 1,180
+2020-02-27 14:37:28.426 [web3sdk-32] INFO  Service() - Receive block notify: 1,180
+2020-02-27 14:37:28.429 [http-nio-6101-exec-9] INFO  DemoServiceImpl() - setAuthentication is result,errorCode:0,errorMessage:success
+2020-02-27 14:37:28.429 [http-nio-6101-exec-9] INFO  PrivateKeyUtil() - save private key into file, weId=did:weid:1:0xe909b608518ba2b6c47f2d11a73fa408dba3fe24, filePath=./keys/0xe909b608518ba2b6c47f2d11a73fa408dba3fe24
+2020-02-27 14:37:28.430 [http-nio-6101-exec-9] INFO  FileUtil() - save data in to [./keys/0xe909b608518ba2b6c47f2d11a73fa408dba3fe24]
+2020-02-27 14:37:37.685 [Thread-5] INFO  AnnotationConfigEmbeddedWebApplicationContext() - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@9ebe38b: startup date [Tue Feb 25 20:08:51 CST 2020]; root of context hierarchy
+2020-02-27 14:37:37.715 [Thread-5] INFO  AnnotationMBeanExporter() - Unregistering JMX-exposed beans on shutdown
+2020-02-27 14:37:47.936 [main] INFO  SampleApp() - Starting SampleApp on liaohua-macbook-pro.local with PID 24688 (/Users/liaohua/weid-sample/dist/app/weid-sample.jar started by liaohua in /Users/liaohua/weid-sample)
+2020-02-27 14:37:47.947 [main] INFO  SampleApp() - No active profile set, falling back to default profiles: default
+2020-02-27 14:37:48.005 [main] INFO  AnnotationConfigEmbeddedWebApplicationContext() - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@9ebe38b: startup date [Thu Feb 27 14:37:47 CST 2020]; root of context hierarchy
+2020-02-27 14:37:48.381 [background-preinit] INFO  Version() - HV000001: Hibernate Validator 5.3.5.Final
+2020-02-27 14:37:49.901 [main] INFO  TomcatEmbeddedServletContainer() - Tomcat initialized with port(s): 6100 (https) 6101 (http)
+2020-02-27 14:37:49.921 [main] INFO  StandardService() - Starting service [Tomcat]
+2020-02-27 14:37:49.923 [main] INFO  StandardEngine() - Starting Servlet Engine: Apache Tomcat/8.5.15
+2020-02-27 14:37:50.049 [localhost-startStop-1] INFO  [/]() - Initializing Spring embedded WebApplicationContext
+2020-02-27 14:37:50.050 [localhost-startStop-1] INFO  ContextLoader() - Root WebApplicationContext: initialization completed in 2052 ms
+2020-02-27 14:37:50.197 [localhost-startStop-1] INFO  ServletRegistrationBean() - Mapping servlet: 'dispatcherServlet' to [/]
+2020-02-27 14:37:50.201 [localhost-startStop-1] INFO  FilterRegistrationBean() - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-02-27 14:37:50.201 [localhost-startStop-1] INFO  FilterRegistrationBean() - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-02-27 14:37:50.202 [localhost-startStop-1] INFO  FilterRegistrationBean() - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-02-27 14:37:50.202 [localhost-startStop-1] INFO  FilterRegistrationBean() - Mapping filter: 'requestContextFilter' to: [/*]
+2020-02-27 14:37:50.237 [main] INFO  PropertiesUtils() - loadProps finish...
+2020-02-27 14:37:50.258 [main] INFO  WeServerV2() - [WeServiceImplV2] begin to init web3j instance..
+2020-02-27 14:37:50.319 [main] INFO  ThreadPoolTaskExecutor() - Initializing ExecutorService  'web3sdk'
+2020-02-27 14:37:51.295 [main] INFO  WeServerV2() - [WeServiceImplV2] init web3j instance success..
+2020-02-27 14:37:51.330 [main] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:37:51.337 [main] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:37:51.338 [main] INFO  BaseEngine() - AuthorityIssuerController init succ
+2020-02-27 14:37:51.344 [main] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:37:51.347 [main] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:37:51.348 [main] INFO  BaseEngine() - SpecificIssuerController init succ
+2020-02-27 14:37:51.362 [main] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:37:51.365 [main] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:37:51.365 [main] INFO  BaseEngine() - WeIdContract init succ
+2020-02-27 14:37:51.373 [main] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:37:51.375 [main] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:37:51.376 [main] INFO  BaseEngine() - CptController init succ
+2020-02-27 14:37:51.614 [main] INFO  RequestMappingHandlerAdapter() - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@9ebe38b: startup date [Thu Feb 27 14:37:47 CST 2020]; root of context hierarchy
+2020-02-27 14:37:51.698 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/createWeId],methods=[POST]}" onto public com.webank.weid.protocol.response.ResponseData<com.webank.weid.protocol.response.CreateWeIdDataResult> com.webank.weid.demo.controller.DemoController.createWeId()
+2020-02-27 14:37:51.699 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/registerAuthorityIssuer],methods=[POST]}" onto public com.webank.weid.protocol.response.ResponseData<java.lang.Boolean> com.webank.weid.demo.controller.DemoController.registerAuthorityIssuer(java.util.Map<java.lang.String, java.lang.String>)
+2020-02-27 14:37:51.700 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/registCpt],methods=[POST]}" onto public com.webank.weid.protocol.response.ResponseData<com.webank.weid.protocol.base.CptBaseInfo> com.webank.weid.demo.controller.DemoController.registCpt(java.lang.String)
+2020-02-27 14:37:51.701 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/createCredential],methods=[POST]}" onto public com.webank.weid.protocol.response.ResponseData<com.webank.weid.protocol.base.CredentialWrapper> com.webank.weid.demo.controller.DemoController.createCredential(java.lang.String)
+2020-02-27 14:37:51.701 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/verifyCredential],methods=[POST]}" onto public com.webank.weid.protocol.response.ResponseData<java.lang.Boolean> com.webank.weid.demo.controller.DemoController.verifyCredential(java.lang.String)
+2020-02-27 14:37:51.704 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-02-27 14:37:51.705 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-02-27 14:37:51.730 [main] INFO  SimpleUrlHandlerMapping() - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-27 14:37:51.731 [main] INFO  SimpleUrlHandlerMapping() - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-27 14:37:51.762 [main] INFO  SimpleUrlHandlerMapping() - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-27 14:37:51.981 [main] INFO  AnnotationMBeanExporter() - Registering beans for JMX exposure on startup
+2020-02-27 14:37:51.996 [main] INFO  Http11NioProtocol() - Initializing ProtocolHandler ["https-jsse-nio-6100"]
+2020-02-27 14:37:52.007 [main] INFO  Http11NioProtocol() - Starting ProtocolHandler ["https-jsse-nio-6100"]
+2020-02-27 14:37:52.028 [main] INFO  NioSelectorPool() - Using a shared selector for servlet write/read
+2020-02-27 14:37:52.036 [main] INFO  Http11NioProtocol() - Initializing ProtocolHandler ["http-nio-6101"]
+2020-02-27 14:37:52.037 [main] INFO  NioSelectorPool() - Using a shared selector for servlet write/read
+2020-02-27 14:37:52.038 [main] INFO  Http11NioProtocol() - Starting ProtocolHandler ["http-nio-6101"]
+2020-02-27 14:37:52.050 [main] INFO  TomcatEmbeddedServletContainer() - Tomcat started on port(s): 6100 (https) 6101 (http)
+2020-02-27 14:37:52.056 [main] INFO  SampleApp() - Started SampleApp in 4.555 seconds (JVM running for 5.677)
+2020-02-27 14:37:56.681 [http-nio-6101-exec-1] INFO  [/]() - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-02-27 14:37:56.681 [http-nio-6101-exec-1] INFO  DispatcherServlet() - FrameworkServlet 'dispatcherServlet': initialization started
+2020-02-27 14:37:56.706 [http-nio-6101-exec-1] INFO  DispatcherServlet() - FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+2020-02-27 14:37:56.749 [http-nio-6101-exec-1] INFO  DemoServiceImpl() - begin create weId and set attribute
+2020-02-27 14:37:56.791 [http-nio-6101-exec-1] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:37:56.794 [http-nio-6101-exec-1] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:37:56.794 [http-nio-6101-exec-1] INFO  BaseEngine() - WeIdContract init succ
+2020-02-27 14:37:56.824 [http-nio-6101-exec-1] INFO  Async() -  default set setExeutor , pool size is 50
+2020-02-27 14:37:56.824 [http-nio-6101-exec-1] INFO  Async() -  set setExeutor because executor null, executor is java.util.concurrent.ThreadPoolExecutor@567b660e[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+2020-02-27 14:37:57.085 [web3sdk-4] INFO  Service() - Receive block notify: 1,181
+2020-02-27 14:37:57.086 [web3sdk-75] INFO  Service() - Receive block notify: 1,181
+2020-02-27 14:37:57.087 [web3sdk-47] INFO  Service() - Receive block notify: 1,181
+2020-02-27 14:37:57.087 [web3sdk-26] INFO  Service() - Receive block notify: 1,181
+2020-02-27 14:37:57.088 [web3sdk-17] INFO  Service() - Receive block notify: 1,181
+2020-02-27 14:37:57.135 [http-nio-6101-exec-1] INFO  DemoServiceImpl() - weIdService is result,errorCode:0,errorMessage:success
+2020-02-27 14:37:57.141 [http-nio-6101-exec-1] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:37:57.145 [http-nio-6101-exec-1] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:37:57.145 [http-nio-6101-exec-1] INFO  BaseEngine() - WeIdContract init succ
+2020-02-27 14:37:57.604 [web3sdk-76] INFO  Service() - Receive block notify: 1,182
+2020-02-27 14:37:57.604 [web3sdk-5] INFO  Service() - Receive block notify: 1,182
+2020-02-27 14:37:57.604 [web3sdk-28] INFO  Service() - Receive block notify: 1,182
+2020-02-27 14:37:57.606 [web3sdk-22] INFO  Service() - Receive block notify: 1,182
+2020-02-27 14:37:57.606 [web3sdk-48] INFO  Service() - Receive block notify: 1,182
+2020-02-27 14:37:57.610 [http-nio-6101-exec-1] INFO  DemoServiceImpl() - setPublicKey is result,errorCode:0,errorMessage:success
+2020-02-27 14:37:57.615 [http-nio-6101-exec-1] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:37:57.618 [http-nio-6101-exec-1] INFO  Contract() - fisco-bcos version:2.2.0, supported version:2.2.0
+2020-02-27 14:37:57.619 [http-nio-6101-exec-1] INFO  BaseEngine() - WeIdContract init succ
+2020-02-27 14:37:58.121 [web3sdk-6] INFO  Service() - Receive block notify: 1,183
+2020-02-27 14:37:58.122 [web3sdk-29] INFO  Service() - Receive block notify: 1,183
+2020-02-27 14:37:58.122 [web3sdk-77] INFO  Service() - Receive block notify: 1,183
+2020-02-27 14:37:58.124 [web3sdk-49] INFO  Service() - Receive block notify: 1,183
+2020-02-27 14:37:58.125 [web3sdk-27] INFO  Service() - Receive block notify: 1,183
+2020-02-27 14:37:58.130 [http-nio-6101-exec-1] INFO  DemoServiceImpl() - setAuthentication is result,errorCode:0,errorMessage:success
+2020-02-27 14:37:58.135 [http-nio-6101-exec-1] INFO  PrivateKeyUtil() - save private key into file, weId=did:weid:1:0xd068e4d3076c3df7e83920539db7df182ddc5a5b, filePath=./keys/0xd068e4d3076c3df7e83920539db7df182ddc5a5b
+2020-02-27 14:37:58.135 [http-nio-6101-exec-1] INFO  FileUtil() - save data in to [./keys/0xd068e4d3076c3df7e83920539db7df182ddc5a5b]
